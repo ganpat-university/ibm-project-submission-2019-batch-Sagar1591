@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ProData</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="/static/layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+</head>
+<body id="top" style="background-image:url('/static/images/demo/img2.png');">
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- Top Background Image Wrapper -->
+<div class="bgded" > 
+  <!-- ################################################################################################ -->
+  <div>
+    
+  </div>
+  <div >
+    <header id="header" class="hoc clear">
+      <nav id="mainav" class="clear"> 
+        <!-- ################################################################################################ -->
+        <ul class="clear">
+          <li><img src="/static/images/demo/logo1.jpg" /></li>
+          <li></li><li></li><li></li><li></li><li></li><li></li>
+          <li></li><li></li><li></li><li></li><li></li><li></li>
+          <li></li><li></li><li></li><li></li><li></li>
+          <li></li><li></li><li></li><li></li><li></li>
+        <a href="{% url 'logout'%}" class="btn btn-default">Log Out </a>
+        <!-- ################################################################################################ -->
+      </nav>
+      
+
+      <h2><p style=" color: white">Hello</p></h2>
+      <h4><p style=" color: white">Welcome to dashboard page</p></h4>
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <input type="file" name="file" style="text-align: center; color: white">
+    <br><br>
+    <input type="submit" value="Upload" class="btn btn-default">
+</form> 
+  
+
+
+
+
+
+</body>
+</html>
